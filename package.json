@@ -1,0 +1,28 @@
+{
+  "name": "opine",
+  "private": true,
+  "version": "1.0.0",
+  "packageManager": "pnpm@9.6.0",
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev",
+    "lint": "turbo run lint"
+  },
+  "devDependencies": {
+    "@opine/prettier-config": "workspace:*",
+    "@turbo/gen": "^2.0.9",
+    "prettier": "catalog:",
+    "turbo": "^2.0.9",
+    "typescript": "catalog:"
+  },
+  "pnpm": {
+    "peerDependencyRules": {
+      "ignoreMissing": [
+        "@babel/*",
+        "expo-modules-*",
+        "typescript"
+      ]
+    }
+  },
+  "prettier": "@opine/prettier-config"
+}
